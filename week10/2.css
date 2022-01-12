@@ -1,0 +1,32 @@
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(254, 255, 205);
+}
+
+.spinner{
+    margin: 100px auto;
+    width:100px;
+    height:100px;
+    position: relative;
+    border-radius:50%;
+    background:conic-gradient(#0000 10%,rgb(0, 172, 252));
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation:load2 1s infinite linear;
+}
+@keyframes load2 {
+    to{transform: rotate(1turn)}
+}
+
+.flexloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    position: absolute;
+    margin-left: 47.5%;
+    color:rgb(0, 172, 252) ;
+}
